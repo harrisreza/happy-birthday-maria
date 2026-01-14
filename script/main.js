@@ -211,7 +211,7 @@ const setupMusicPlayer = () => {
       slidingWall.classList.remove('revealed');
       if (hintText) {
         hintText.classList.remove('visible');
-        hintText.textContent = '👆 Slide to reveal secret music';
+        hintText.textContent = '👆';
       }
       // Disable button
       musicBtn.style.cursor = 'default';
@@ -271,7 +271,7 @@ const setupMusicPlayer = () => {
       // Temporary hint
       if (hintText) {
         const originalText = hintText.textContent;
-        hintText.textContent = '👉 Slide left first!';
+        hintText.textContent = '👉';
         hintText.classList.add('visible');
         setTimeout(() => {
           hintText.textContent = originalText;
@@ -299,7 +299,7 @@ const setupMusicPlayer = () => {
         setTimeout(() => {
           musicBtn.textContent = '🎵';
           if (hintText) {
-            hintText.textContent = '🎵 Click to play music!';
+            hintText.textContent = 'ada rahasia';
           }
         }, 1500);
       });
@@ -308,7 +308,7 @@ const setupMusicPlayer = () => {
       musicBtn.textContent = '🎵';
       musicBtn.style.background = '#ffffff';
       if (hintText) {
-        hintText.textContent = '🎵 Click to play music!';
+        hintText.textContent = 'ada rahasia';
       }
     }
   });
@@ -325,7 +325,7 @@ const setupMusicPlayer = () => {
     slidingWall.classList.remove('revealed');
     slidingWall.style.animation = '';
     if (hintText) {
-      hintText.textContent = '👆 Slide to reveal secret music';
+      hintText.textContent = '👆';
       hintText.classList.remove('visible');
     }
     isRevealed = false;
