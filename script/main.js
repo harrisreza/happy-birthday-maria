@@ -202,7 +202,7 @@ const setupMusicPlayer = () => {
       slidingWall.classList.add('revealed');
       if (hintText) {
         hintText.classList.add('visible');
-        hintText.textContent = '🎵 Click to play music!';
+        hintText.textContent = 'ada rahasia';
       }
       // Enable button
       musicBtn.style.cursor = 'pointer';
