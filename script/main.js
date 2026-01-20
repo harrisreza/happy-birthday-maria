@@ -202,7 +202,7 @@ const setupMusicPlayer = () => {
       slidingWall.classList.add('revealed');
       if (hintText) {
         hintText.classList.add('visible');
-        hintText.textContent = 'ada rahasia';
+        hintText.textContent = 'kerasin volumenya';
       }
       // Enable button
       musicBtn.style.cursor = 'pointer';
@@ -287,7 +287,7 @@ const setupMusicPlayer = () => {
         musicBtn.textContent = '⏸️';
         musicBtn.style.background = '#ffffff';
         if (hintText) {
-          hintText.textContent = 'Music playing...';
+          hintText.textContent = 'kerasin volumenya';
         }
       }).catch(error => {
         console.log('Audio play failed:', error);
@@ -299,7 +299,7 @@ const setupMusicPlayer = () => {
         setTimeout(() => {
           musicBtn.textContent = '🎵';
           if (hintText) {
-            hintText.textContent = 'ada rahasia';
+            hintText.textContent = 'kerasin volumenya';
           }
         }, 1500);
       });
@@ -308,7 +308,7 @@ const setupMusicPlayer = () => {
       musicBtn.textContent = '🎵';
       musicBtn.style.background = '#ffffff';
       if (hintText) {
-        hintText.textContent = 'ada rahasia';
+        hintText.textContent = 'kerasin volumenya';
       }
     }
   });
